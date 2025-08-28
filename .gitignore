@@ -1,0 +1,20 @@
+# Node / React / Vite / Next
+node_modules/
+dist/
+build/
+.next/
+.out/
+.cache/
+coverage/
+*.log
+.DS_Store
+
+# Env & secrets
+.env
+.env.*
+*.env*
+.secrets
+
+# Editors/tools
+.vscode/
+.idea/
