@@ -18,3 +18,9 @@ coverage/
 # Editors/tools
 .vscode/
 .idea/
+
+server/config/secrets.js
+.secrets
+.env
+.env.*
+*.env*

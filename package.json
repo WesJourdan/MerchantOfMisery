@@ -1,0 +1,12 @@
+{
+  "name": "yote",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../web && npm install",
+    "start": "nodemon server/index.js",
+    "build": "cd web && NODE_ENV=production vite build"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
