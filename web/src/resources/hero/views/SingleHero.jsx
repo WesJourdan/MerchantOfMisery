@@ -17,6 +17,7 @@ import { useGetHeroById } from '../heroService'
 
 // import resource components
 import HeroLayout from '../components/HeroLayout.jsx'
+import HellmarchTactics from '../components/HellmarchTactics.jsx'
 
 const SingleHero = () => {
   // get location. Below is equivalent to const location = this.props.location
@@ -34,6 +35,12 @@ const SingleHero = () => {
         <div className={heroQuery.isFetching ? "opacity-50" : ""}>
           <h2>Hero details</h2>
           <h1> {hero?.name} </h1>
+          {hero && (
+            <div className="mt-8">
+              <h3 className="text-lg font-semibold text-slate-200 mb-3">Hellmarch tactics simulator</h3>
+              <HellmarchTactics heroName={hero?.name || 'Hero'} />
+            </div>
+          )}
         </div>
       </WaitOn>
       <Link to={`${location.pathname}/update`}>Update Hero</Link>
